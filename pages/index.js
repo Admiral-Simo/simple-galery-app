@@ -1,4 +1,3 @@
-import styles from "../styles/Home.module.css";
 import { Center, Box, SimpleGrid, Image } from "@chakra-ui/react";
 import { useRef, useState, useEffect } from "react";
 const images = [
