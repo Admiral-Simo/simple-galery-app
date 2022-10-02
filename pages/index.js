@@ -16,17 +16,20 @@ export default function Home() {
   return (
     <Center bg="purple.800" h="100vh" flexDirection="column">
       <Image
+        alt="image"
         src={"assets/" + images[currentImage]}
         h="250px"
         mb="16px"
         border="2px solid white"
       />
-      <SimpleGrid columns={[2,3,4]} spacing="10px">
+      <SimpleGrid columns={[2, 3, 4]} spacing="10px">
         {images.map((el, index) => {
           const elem = "assets/" + el;
           const isCurrent = currentImage === index;
           return (
             <Image
+              key={index}
+              alt="image"
               cursor="pointer"
               src={elem}
               border={isCurrent ? "2px solid white" : "none"}
